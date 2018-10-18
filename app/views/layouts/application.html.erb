@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PotionHW</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="header-left">
+        <%= link_to '/' do %>
+          <%= image_tag 'logo.svg', alt: 'PotionHW Logo', size: '45', class: 'header-logo' %>
+        <% end %>
+        <div class="header-title-div">
+          <h1 class="header-title">PotionHW</h1>
+          <span class="header-slogan">All your homework in one place</span>
+        </div>
+      </div>
+    </header>
+    
+    <div class="content">
+      <%= yield %>
+    </div>
+    
+    <footer class="footer">
+      <div class="footer-section">
+        <h2 class="footer-section-header">About PotionHW</h2>
+        <p>PotionHW was created by Daniel Thwaites in 2018.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h2 class="footer-section-header">Links</h2>
+        <ul>
+          <li><%= link_to 'License', license_path %></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

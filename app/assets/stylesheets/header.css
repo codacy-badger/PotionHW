@@ -1,0 +1,20 @@
+.header {
+    background-color: black;
+    color: white;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-title-div {
+  display: inline-block;
+}
+
+.header-title {
+  font-size: 17px;
+}
+
+.header-slogan {
+  font-size: 14px;
+}

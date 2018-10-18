@@ -1,0 +1,7 @@
+<h2>PotionHW Licenses</h2>
+<br><p>
+<% @license_text.each_line do |line| %>
+  <%= line %><br>
+  <% if line == '' then %></p><p><% end %>
+<% end %>
+</p>

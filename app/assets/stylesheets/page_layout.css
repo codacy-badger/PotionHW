@@ -1,0 +1,20 @@
+.header, .footer {
+  padding: 10px 16px;
+}
+
+.content {
+  background-color: white;
+  padding: 16px;
+}
+
+/* This class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page to prevent sudden quick movement as the header gets its new position */
+.sticky + .content {
+  padding-top: 102px;
+}
